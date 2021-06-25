@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Controle de Estoque',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Controle de Estoque</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'Controle de Estoque',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
@@ -129,7 +129,7 @@ return [
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-dark navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -228,8 +228,8 @@ return [
         // Navbar items:
         [
             'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
+            'text'         => 'Pesquisa',
+            'topnav' => true,
         ],
         [
             'type'         => 'fullscreen-widget',
@@ -237,86 +237,114 @@ return [
         ],
 
         // Sidebar items:
+
+
         [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Cadastros',
+            'icon'    => 'fas fa-fw fa-plus',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Grupos de produtos',
                     'url'  => '#',
                 ],
                 [
-                    'text'    => 'level_one',
+                    'text'    => 'Marcas de produtos',
                     'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    
                 ],
                 [
-                    'text' => 'level_one',
+                    'text' => 'Locais de armazenamento',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Unidades de medida',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Produtos',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Países',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Estados',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Cidades',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Fornecedores',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Perfis de Usuários',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Usuários',
                     'url'  => '#',
                 ],
             ],
         ],
-        ['header' => 'labels'],
+
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text'    => 'Operações',
+            'icon'    => 'fas fa-fw fa-arrow-alt-circle-up',
+            'submenu' => [
+                [
+                    'text' => 'Entrada de produtos',
+                    'url'  => '#',
+                ],
+                [
+                    'text'    => 'Saída de produtos',
+                    'url'     => '#',
+                    
+                ],
+                [
+                    'text' => 'Lançamento de perdas de produtos',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'Inventário de estoque',
+                    'url'  => '#',
+                ],
+            ],
         ],
+
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text'    => 'Relatórios',
+            'icon'    => 'fas fa-fw fa-file-alt',
+            'submenu' => [
+                [
+                    'text' => 'Posição do Estoque',
+                    'url'  => '#',
+                ],
+                [
+                    'text'    => 'Ressuprimento',
+                    'url'     => '#',
+                    
+                ],
+            ],
         ],
+
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text'    => 'Gráficos',
+            'icon'    => 'fas fa-fw fa-chart-line',
+            'submenu' => [
+                [
+                    'text' => 'Perdas por mês',
+                    'url'  => '#',
+                ],
+                [
+                    'text'    => 'Entradas vs saídas por mês',
+                    'url'     => '#',
+                    
+                ],
+            ],
         ],
     ],
 
