@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Home;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $produto = Home::where('quant_estoque','>','0')
+                        ->orderBy('nome','asc')
+                        ->paginate(5);
+        return view('home', ['produtos'=>$produto]);
     }
 }
