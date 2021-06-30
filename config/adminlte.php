@@ -254,7 +254,7 @@ return [
                 ],
                 [
                     'text' => 'Locais de armazenamento',
-                    'url'  => '#',
+                    'url'  => 'armazenamento',
                 ],
                 [
                     'text' => 'Unidades de medida',

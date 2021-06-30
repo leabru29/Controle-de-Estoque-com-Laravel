@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CadGrupoProdutoController;
 use App\Http\Controllers\MarcaController;
+use App\Http\Controllers\ArmazenamentoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::resource('grupo', CadGrupoProdutoController::class);
 
 Route::resource('marca', MarcaController::class);
+
+Route::resource('armazenamento', ArmazenamentoController::class);
