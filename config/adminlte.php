@@ -245,7 +245,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Grupos de produtos',
-                    'url'  => '#',
+                    'url'  => 'grupo',
                 ],
                 [
                     'text'    => 'Marcas de produtos',

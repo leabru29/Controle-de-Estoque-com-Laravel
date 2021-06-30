@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $produto = DB::table('produto')
-                        ->join('grupo_produto','produto.id_grupo','=','grupo_produto.id_grupo')
+                        ->join('grupo_produto','produto.id_grupo','=','grupo_produto.id')
                         ->where('quant_estoque','>','0')
                         ->orderBy('nome','asc')
                         ->paginate(5);
