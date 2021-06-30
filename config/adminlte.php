@@ -249,7 +249,7 @@ return [
                 ],
                 [
                     'text'    => 'Marcas de produtos',
-                    'url'     => '#',
+                    'route'     => 'marca.index',
                     
                 ],
                 [

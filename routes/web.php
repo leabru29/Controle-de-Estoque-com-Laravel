@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CadGrupoProdutoController;
+use App\Http\Controllers\MarcaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +20,5 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('grupo', CadGrupoProdutoController::class);
+
+Route::resource('marca', MarcaController::class);
