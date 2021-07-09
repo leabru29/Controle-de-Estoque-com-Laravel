@@ -258,27 +258,27 @@ return [
                 ],
                 [
                     'text' => 'Unidades de medida',
-                    'url'  => '#',
+                    'route'  => 'unidade.index',
                 ],
                 [
                     'text' => 'Produtos',
-                    'url'  => '#',
+                    'route'  => 'produtos.index',
                 ],
                 [
                     'text' => 'Países',
-                    'url'  => '#',
+                    'url'  => 'paises',
                 ],
                 [
                     'text' => 'Estados',
-                    'url'  => '#',
+                    'route'  => 'estado.index',
                 ],
                 [
                     'text' => 'Cidades',
-                    'url'  => '#',
+                    'route'  => 'cidade.index',
                 ],
                 [
                     'text' => 'Fornecedores',
-                    'url'  => '#',
+                    'route'  => 'fornecedor.index',
                 ],
                 [
                     'text' => 'Perfis de Usuários',
@@ -301,7 +301,7 @@ return [
                 ],
                 [
                     'text'    => 'Saída de produtos',
-                    'url'     => '#',
+                    'route'     => 'saida.index',
                     
                 ],
                 [
